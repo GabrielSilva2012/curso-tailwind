@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+
+
+<body class="bg-blue-400  w-screen h-screen m-4  sm:bg-green-100">
+
+  <!-- Fontes e Cores-->
+  <div class="font-black m-4 text-center ">
+    <h2>Fontes e Cores</h2>
+  </div>
+
+  <h2 class="text-sm text-gray-500">Hello Word</h2>
+  <h2 class="text-base text-red-800">Hello Word</h2>
+  <h2 class="text-lg  text-yellow-500">Hello Word</h2>
+  <h2 class="text-xl tracking-widest">Hello Word</h2>
+  <h2 class="text-2xl font-black">Hello Word</h2>
+
+  <!--Espaçamentos-->
+  <div class="font-black m-4 text-center">
+    <h2>Espacamentos</h2>
+  </div>
+
+  <div class="p-4 m-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam, ipsam, voluptas quos minima aspernatur rem itaque saepe sunt maxime sed ab, cum quas? At ullam error molestiae cupiditate tempore.
+  </div>
+  <div class="m-4 space-x-4">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </div>
+
+  <!--Bordas -->
+  <div class="font-black m-4 text-center">
+    <h2>Bordas</h2>
+  </div>
+
+  <div class="m-4 p-4 border-l-2 border-yellow-400">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cupiditate. Ut, delectus accusamus architecto quibusdam fuga aspernatur quis ipsam quasi reiciendis vitae nobis vero, officiis facere ad, pariatur aut similique?
+  </div>
+
+  <div class="m-4 p-4 border-2 border-red-400 rounded">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cupiditate. Ut, delectus accusamus architecto quibusdam fuga aspernatur quis ipsam quasi reiciendis vitae nobis vero, officiis facere ad, pariatur aut similique?<br>
+    <button class="bg-blue-400 px-4 py-1 rounded text-white ring-2 ring-red-300">Salvar</button>
+  </div>
+
+  <!--Backgroud -->
+  <div class="font-black m-4 text-center">
+    <h2>Backgroud</h2>
+  </div>
+
+  <div class="m-4 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cupiditate. Ut, delectus accusamus architecto quibusdam fuga aspernatur quis ipsam quasi reiciendis vitae nobis vero, officiis facere ad, pariatur aut similique?
+  </div>
+
+  <div class="m-4 p-4 font-black bg-gradient-to-r from-blue-900 via-blue-500 to-blue-100 rounded">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cupiditate. Ut, delectus accusamus architecto quibusdam fuga aspernatur quis ipsam quasi reiciendis vitae nobis vero, officiis facere ad, pariatur aut similique?
+  </div>
+
+
+  <!--Largura e Altura -->
+  <div class="font-black m-4 text-center">
+    <h2>Largura e Altura</h2>
+  </div>
+
+  <div class="m-4 w-screen max-w-5xl p-4 font-black bg-gradient-to-r from-blue-900 via-blue-500 to-blue-100 rounded">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cupiditate. Ut, delectus accusamus architecto quibusdam fuga aspernatur quis ipsam quasi reiciendis vitae nobis vero, officiis facere ad, pariatur aut similique?
+  </div>
+
+  <!--Flex Box -->
+  <div class="font-black m-4 text-center">
+    <h2>Flex Box</h2>
+  </div>
+
+  <div class="flex space-x-4 justify-center items-center m-4 m-b-4 bg-blue-400 h-36 ">
+    <div class="w-24 h-24 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="w-24 h-24 hp-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="w-24 h-24 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+  </div>
+
+  <div class="flex space-x-4 justify-center items-center m-4 m-b-4 bg-blue-400 h-36 ">
+    <div class="w-24 h-24 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="flex-grow flex-shrink-0 w-24 h-24 hp-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="w-24 h-24 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+  </div>
+
+  <!--Grid -->
+  <div class="font-black m-4 text-center">
+    <h2>Grid</h2>
+  </div>
+
+  <div class="p-4 grid grid-cols-12 gap-4 m-4 bg-blue-400 h-36 ">
+    <div class="col-span-10 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+    <div class="col-span-4 p-4 font-black bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded"></div>
+  </div>
+
+  <!-- Responsividade -->
+  <div class="font-black m-4 text-center">
+    <h2>Responsividade</h2>
+  </div>
+
+  <div class="flex space-x-4 justify-center items-center m-4 m-b-4 bg-yellow-400 h-36 ">
+    <div class="w-24 h-24 p-4  font-black bg-red-400 rounded  sm:bg-blue-400"></div>
+    <div class="w-24 h-24 p-4 font-black  bg-red-400 rounded  sm:bg-blue-400"></div>
+    <div class="w-24 h-24 p-4 font-black  bg-red-400 rounded  sm:bg-blue-400"></div>
+  </div>
+
+  <!-- Hover, Focus e Etc -->
+  <div class="font-black m-4 text-center">
+    <h2 class="text-gray-700  hover:text-blue-700 hover:underline">
+      Hover, Focus e Etc</h2>
+  </div>
+  <div class="group w-72 bg-gray-100 p-4 m-4 m-auto ">
+    <h4 class="text-center font-bold group-hover:text-blue-300">Título do meu Card</h4>
+    <p class="mt-4 p-4 bg-gray-500 group-hover:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ad praesentium accusamus sed, impedit explicabo nisi error autem eum omnis harum est necessitatibus deserunt.</p>
+    <input type="text" class="bg-gray-100 text-lg px-4 py-2 focus:text-red-300">
+  </div>
+
+  <!-- DarkMold -->
+  <div class="font-black m-4 text-center">
+    <h2 class="dark:text-blue-400 text-yellow-700 ">
+      Dark Mold</h2>
+  </div>
+  <div class="flex justify-center items-center ">
+    <a href="../src/componentes.html" class="w-40 m-4 px-2 py-1 border-2 border-red-400 bg-gray-100 text-red-800 font-black rounded text-center"> Componentes</a>
+  </div>
+</body>
+
+
+</html>
