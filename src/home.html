@@ -13,7 +13,7 @@
 
   <!--Header-->
   <div>
-    <div class="container mx-auto px-4 h-24 flex items-center">
+    <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center">
       <div class="font-black">
         LOGO
       </div>
@@ -30,24 +30,24 @@
 
   <!--/Banner-->
   <div style="background: url('../img/hero-image-1.png'); height: 458px;">
-    <div class="container mx-auto h-full px-4 flex items-center justify-center">
+    <div class="container max-w-5xl mx-auto h-full px-4 flex items-center justify-center">
       <div>
         <div class="text-center">
           <h1 class="text-3xl  text-gray-100 mb-1">Onde voçê quer ir?</h1>
           <p class="text-green-100 ">Escolha o estado e cidade para achar os melhores resorts</p>
         </div>
 
-        <div class="mt-5">
-          <form class="space-x-4">
+        <div class="mt-7">
+          <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <select class="bg-grey-50 px-3 py-2 rounded border border-gray-300 text-gray-500">
               <option value="">Escolha Estado</option>
             </select>
 
-            ] <select class="bg-grey-50 px-3 py-2 rounded border border-gray-300 text-gray-500">
+            <select class="bg-grey-50 px-3 py-2 rounded border border-gray-300 text-gray-500">
               <option value="">Escolha Cidade</option>
             </select>
 
-            <button class="inline-flex items-center bg-orange-500  font-medium px-3 py-2 rounded border border-orange-300 text-orange-900">
+            <button class="col-span-2 lg:col-span-1 inline-flex justify-center items-center bg-orange-500  font-medium px-3 py-2 rounded border border-orange-300 text-orange-900">
               <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
@@ -62,9 +62,9 @@
 
   <!-- Feature Resort -->
   <div>
-    <div class="container mx-auto px-4 py-10">
-      <div class="flex">
-        <div class="pr-10">
+    <div class="container max-w-5xl mx-auto px-4 py-20">
+      <div class="flex flex-col-reverse lg:flex-row">
+        <div class="lg:pr-10">
           <div class="text-sm text-gray-500 font-medium">Resort em destaque</div>
           <div class="text-2xl text-gray-800">Ecoresort Praia do Forte Bahia</div>
           <div class="text-sm text-gray-500 font-medium">Hotel Qualidade 5 estrelas</div>
@@ -73,17 +73,18 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis id incidunt assumenda ipsum earum possimus voluptate consectetur distinctio, optio suscipit fuga cumque sed dolore laboriosam at est molestias quasi!</p>
           </div>
           <div class="mt-4">
-            <button class="inline-flex items-center justify-center bg-orange-500  font-medium px-2 py-1 rounded border border-orange-300 text-orange-900">
-              Solicitar reservar
-              <svg class="w-4 h-4 ml-1 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </button>
+            <a href=""><button class="inline-flex items-center justify-center bg-orange-500  font-medium px-2 py-1 rounded border border-orange-300 text-orange-900">
+                Solicitar reservar
+                <svg class="w-4 h-4 ml-1 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </a>
           </div>
 
         </div>
 
-        <div class="flex-shrink-0 ml-auto">
+        <div class="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0">
           <img src="../img/featured-img.png" widht="450">
         </div>
       </div>
@@ -93,19 +94,19 @@
 
   <!--Resorts grid-->
 
-  <div>
-    <div class="container mx-auto px-4">
+  <div class="">
+    <div class="container max-w-5xl mx-auto px-4">
       <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais Resorts</h3>
 
-      <div class="grid grid-cols-4 grid-rows-2 gap-6">
-        <div class="relative col-span-2 row-span-2 rounded-lg overflow-hidden">
+      <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0">
+        <div class="relative md:col-span-2 md:row-span-2 rounded-lg overflow-hidden">
           <div class="absolute bottom-0 pl-4 pb-3 text-white font-bold z-20">
             Beach Park Resort
           </div>
           <img src="../img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
           <img src="../img/hotel-1.jpeg" class="w-full h-full object-cover">
         </div>
-        <div class="relative col-span-2 h-40  rounded-lg overflow-hidden">
+        <div class="relative md:col-span-2 md:h-40  rounded-lg overflow-hidden">
           <div class="absolute bottom-0 pl-4 pb-3 text-white font-bold z-20">
             Salinas do Maragogi Resort
           </div>
@@ -131,6 +132,44 @@
   </div>
   <!-- /Resorts grid -->
 
+  <!-- Form search -->
+  <div class="py-20">
+    <div class="container max-w-5xl mx-auto h-full px-4 flex items-center justify-center">
+      <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <select class="bg-grey-50 px-3 py-2 rounded border border-gray-300 text-gray-500">
+          <option value="">Escolha Estado</option>
+        </select>
+
+        <select class="bg-grey-50 px-3 py-2 rounded border border-gray-300 text-gray-500">
+          <option value="">Escolha Cidade</option>
+        </select>
+
+        <button class="col-span-2 lg:col-span-1 inline-flex justify-center items-center bg-orange-500  font-medium px-3 py-2 rounded border border-orange-300 text-orange-900">
+          <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          Pesquisar Resorts
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- /Form search -->
+
+  <!-- Footer -->
+  <div class="border-t border-gray-200">
+    <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center justify-center space-x-3">
+      <div class="font-black">
+        LOGO
+      </div>
+      <div>
+        <a href=""><img src="../img/icon-facebook.png" alt="Facebook"></a>
+      </div>
+      <div>
+        <a href=""><img src="../img/icon-instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+  <!-- /Footer -->
 </body>
 
 </html>*
